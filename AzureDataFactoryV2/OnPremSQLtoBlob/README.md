@@ -2,7 +2,7 @@
 
 
 
-[![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRjones1978%2FAzure-Tempates%2Fmain%2FAzureDataFactoryV2%2FOnPremSQLtoBlob%2Fazuredeploy.json%3Ftoken%3DAQSB5QKLFFXMG4VM2LTADVK7VWV3C)
+[![Deploy to Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRjones1978%2FAzure-Tempates%2Fmain%2FAzureDataFactoryV2%2FOnPremSQLtoBlob%2Fazuredeploy.json)
 
 This template creates a data factory of version 2 with a pipeline that copies data from a table in an on-premises SQL Server database to a folder of a container in an Azure blob storage.  
 
