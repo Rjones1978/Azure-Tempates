@@ -1,3 +1,3 @@
 # Cerner Stratum Paved Path Azure Templates
 
-These templates can be used to deploy resouces to Azure. 
+These templates for Linked Services are denoted by the connector and if the storage credentials are stored in the Key Vault or not. 

@@ -1,3 +1,5 @@
 # Cerner Stratum Paved Path Azure Templates
 
-These templates can be used to deploy resouces to Azure. 
+The following templates are designed for Azure Data Factory V2. 
+
+The templates can be imported directly into the Data Factory by choosing the import function in the Azure portal. 
