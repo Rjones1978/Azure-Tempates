@@ -1,0 +1,40 @@
+{
+    "name": "DS_SQLDB_KV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_SQLDB_KV",
+            "type": "LinkedServiceReference",
+            "parameters": {
+                "STR_SecretName": {
+                    "value": "@dataset().STR_SECRETNAME",
+                    "type": "Expression"
+                }
+            }
+        },
+        "parameters": {
+            "STR_SCHEMANAME": {
+                "type": "string"
+            },
+            "STR_TABLENAME": {
+                "type": "string"
+            },
+            "STR_SECRETNAME": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [],
+        "typeProperties": {
+            "schema": {
+                "value": "@dataset().STR_SCHEMANAME",
+                "type": "Expression"
+            },
+            "table": {
+                "value": "@dataset().STR_TABLENAME",
+                "type": "Expression"
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

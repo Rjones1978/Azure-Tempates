@@ -1,0 +1,18 @@
+{
+    "name": "DS_ADL2_Parquet_KV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_ADL2_KV",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Parquet",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation"
+            },
+            "compressionCodec": "snappy"
+        },
+        "schema": []
+    }
+}

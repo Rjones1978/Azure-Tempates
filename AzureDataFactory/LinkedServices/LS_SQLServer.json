@@ -1,0 +1,12 @@
+{
+    "name": "LS_SQLServer",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "SqlServer",
+        "typeProperties": {
+            "connectionString": "integrated security=False;data source=sqlsrvcerner.database.windows.net;initial catalog=sqldbCerner;user id=rjones",
+            "encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkFERkNFUk5FUkFERl81NGE0NzRjZS03NWNmLTQ4NDktYWRjMi1mNmI3ZTBiNzJhZGUiDQp9"
+        }
+    }
+}

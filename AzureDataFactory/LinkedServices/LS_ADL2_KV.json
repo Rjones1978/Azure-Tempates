@@ -1,0 +1,32 @@
+{
+    "name": "LS_ADL2_KV",
+    "properties": {
+        "type": "AzureBlobFS",
+        "parameters": {
+            "STR_SecretName": {
+                "type": "string"
+            },
+            "STR_URL": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "typeProperties": {
+            "url": {
+                "value": "@linkedService().STR_URL",
+                "type": "Expression"
+            },
+            "accountKey": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "LS_KeyVault",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": {
+                    "value": "@linkedService().STR_SecretName",
+                    "type": "Expression"
+                }
+            }
+        }
+    }
+}

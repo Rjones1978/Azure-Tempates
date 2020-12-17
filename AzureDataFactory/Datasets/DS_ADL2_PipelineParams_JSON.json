@@ -1,0 +1,49 @@
+{
+    "name": "DS_ADL2_PipelineParams_JSON",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_ADL2_Params",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "STR_Filename": {
+                "type": "string",
+                "defaultValue": "PipelineParams.json"
+            }
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().STR_Filename",
+                    "type": "Expression"
+                },
+                "folderPath": "customer1",
+                "fileSystem": "adfparams"
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "SOURCE_TABLE_NAME": {
+                    "type": "string"
+                },
+                "TARGET_FILE_PREFIX": {
+                    "type": "string"
+                },
+                "TARGET_DIRECTORY": {
+                    "type": "string"
+                },
+                "WHERE": {
+                    "type": "string"
+                },
+                "Column_List": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

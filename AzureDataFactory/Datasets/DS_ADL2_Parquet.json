@@ -1,0 +1,42 @@
+{
+    "name": "DS_ADL2_Parquet_Directional",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_ADL2",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "STR_Directory": {
+                "type": "string"
+            },
+            "STR_Filename": {
+                "type": "string"
+            },
+            "STR_Container": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "Parquet",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().STR_Filename",
+                    "type": "Expression"
+                },
+                "folderPath": {
+                    "value": "@dataset().STR_Directory",
+                    "type": "Expression"
+                },
+                "fileSystem": {
+                    "value": "@dataset().STR_Container",
+                    "type": "Expression"
+                }
+            },
+            "compressionCodec": "snappy"
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
