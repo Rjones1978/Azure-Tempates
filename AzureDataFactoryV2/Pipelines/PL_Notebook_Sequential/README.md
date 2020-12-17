@@ -8,10 +8,10 @@ The format of the JSON file is of the following format.
 
 [
     {
-        "NOTEBOOK_PATH": "**_WORKSPACEPATH"
+        "NOTEBOOK_PATH": "**_WORKSPACEPATH_**"
     },
     {
-        "NOTEBOOK_PATH": "**_WORKSPACEPATH"
+        "NOTEBOOK_PATH": "**_WORKSPACEPATH_**"
     }
 ]
 
