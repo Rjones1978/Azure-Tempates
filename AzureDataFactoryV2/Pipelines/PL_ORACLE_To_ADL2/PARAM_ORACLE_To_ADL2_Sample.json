@@ -1,0 +1,18 @@
+[
+    {
+        "SOURCE_SCHEMA_NAME": "SalesLT",
+        "SOURCE_TABLE_NAME": "Customer",
+        "TARGET_FILE_PREFIX": "customer",
+        "TARGET_DIRECTORY": "customer1",
+        "WHERE": "1=1",
+        "Column_List": "*"
+    },
+    {
+        "SOURCE_SCHEMA_NAME": "SalesLT",
+        "SOURCE_TABLE_NAME": "Product",
+        "TARGET_FILE_PREFIX": "product",
+        "TARGET_DIRECTORY": "customer1",
+        "WHERE": "1=1",
+        "Column_List": "*"
+    }
+]

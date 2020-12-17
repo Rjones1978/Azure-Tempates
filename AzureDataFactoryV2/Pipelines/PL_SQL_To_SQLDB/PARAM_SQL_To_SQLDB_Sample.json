@@ -1,0 +1,18 @@
+[
+    {
+        "SOURCE_SCHEMA_NAME": "SalesLT",
+        "SOURCE_TABLE_NAME": "Customer",
+        "DESTINATION_SCHEMA_NAME": "customer",
+        "DESTINATION_TABLE_NAME": "customer1",
+        "WHERE": "1=1",
+        "Column_List": "*"
+    },
+    {
+        "SOURCE_SCHEMA_NAME": "SalesLT",
+        "SOURCE_TABLE_NAME": "Product",
+        "DESTINATION_SCHEMA_NAME": "SalesLT",
+        "DESTINATION_TABLE_NAME": "Product",
+        "WHERE": "1=1",
+        "Column_List": "*"
+    }
+]
