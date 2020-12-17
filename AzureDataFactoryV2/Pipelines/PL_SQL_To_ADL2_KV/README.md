@@ -8,19 +8,19 @@ The format of the JSON file is of the following format.
 
 [
     {
-        "SOURCE_SCHEMA_NAME": "<SourceSchema>",
-        "SOURCE_TABLE_NAME": "<SourceTable>",
-        "TARGET_FILE_PREFIX": "<TargetFile>",
-        "TARGET_DIRECTORY": "<TargetDirectory>",
+        "SOURCE_SCHEMA_NAME": "**_SourceSchema_**",
+        "SOURCE_TABLE_NAME": "**_SourceTable_**",
+        "TARGET_FILE_PREFIX": "**_TargetFile_**",
+        "TARGET_DIRECTORY": "**_TargetDirectory_**",
         "WHERE": "1=1",
         "Column_List": "*",
         "SECRET_NAME":"<KEYVAULTSECRETNAME>"
     },
     {
-        "SOURCE_SCHEMA_NAME": "<SourceSchema>",
-        "SOURCE_TABLE_NAME": "<SourceTable>",
-        "TARGET_FILE_PREFIX": "<TargetFile>",
-        "TARGET_DIRECTORY": "<TargetDirectory>",
+  "SOURCE_SCHEMA_NAME": "**_SourceSchema_**",
+        "SOURCE_TABLE_NAME": "**_SourceTable_**",
+        "TARGET_FILE_PREFIX": "**_TargetFile_**",
+        "TARGET_DIRECTORY": "**_TargetDirectory_**",
         "WHERE": "1=1",
         "Column_List": "*",
         "SECRET_NAME":"<KEYVAULTSECRETNAME>"

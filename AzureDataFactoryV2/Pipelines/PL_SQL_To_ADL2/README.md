@@ -8,21 +8,22 @@ The format of the JSON file is of the following format.
 
 [
     {
-        "SOURCE_SCHEMA_NAME": "<SourceSchema>",
-        "SOURCE_TABLE_NAME": "<SourceTable>",
-        "TARGET_FILE_PREFIX": "<TargetFile>",
-        "TARGET_DIRECTORY": "<TargetDirectory>",
+        "SOURCE_SCHEMA_NAME": "**_SourceSchema_**",
+        "SOURCE_TABLE_NAME": "**_SourceTable_**",
+        "TARGET_FILE_PREFIX": "**_TargetFile_**",
+        "TARGET_DIRECTORY": "**_TargetDirectory_**",
         "WHERE": "1=1",
         "Column_List": "*"
     },
     {
-        "SOURCE_SCHEMA_NAME": "<SourceSchema>",
-        "SOURCE_TABLE_NAME": "<SourceTable>",
-        "TARGET_FILE_PREFIX": "<TargetFile>",
-        "TARGET_DIRECTORY": "<TargetDirectory>",
+         "SOURCE_SCHEMA_NAME": "**_SourceSchema_**",
+        "SOURCE_TABLE_NAME": "**_SourceTable_**",
+        "TARGET_FILE_PREFIX": "**_TargetFile_**",
+        "TARGET_DIRECTORY": "**_TargetDirectory_**",
         "WHERE": "1=1",
         "Column_List": "*"
     }
 ]
+
 
 After the parameter file & Pipeline are deployed a trigger to run the pipeline with the same name as the parameter file must be created. The file extension “.json” should not be part of the trigger name. 
